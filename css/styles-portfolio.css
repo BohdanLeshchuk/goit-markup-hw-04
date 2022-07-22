@@ -17,6 +17,7 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
+
 .header-content {
   width: 1170px;
   height: 80px;
@@ -38,6 +39,7 @@
 .logo-blue {
   color: #2196f3;
 }
+
 .logo {
   text-decoration: none;
   margin-right: 93px;
@@ -69,6 +71,7 @@
 .menu-item {
   margin: 0px 50px 0px 0px;
 }
+
 .menu-list :last-child {
   margin-right: 0px;
 }
@@ -83,12 +86,13 @@
 }
 
 .header-contact {
-  margin-left: 331px;
+  margin-left: 305px;
 }
 
 .contact-list {
   list-style: none;
   display: flex;
+  gap: 30px;
 
   padding-left: 0;
   margin-top: 0px;
@@ -100,24 +104,35 @@
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  align-items: center;
 }
 
-.contact-item {
-  margin-right: 50px;
+.header-icon {
+  width: 16px;
+  height: 12px;
+  padding-right: 10px;
+  cursor: pointer;
+  fill: #757575;
 }
 
-.contact-list :last-child {
-  margin-right: 0px;
-}
-
-.contact-link {
-  text-decoration: none;
-  color: #757575;
+.mobile {
+  width: 10px;
+  height: 16px;
 }
 
 .contact-link:hover,
 .contact-link:focus {
   color: #2196f3;
+}
+
+.contact-link:hover .header-icon,
+.contact-link:focus .header-icon {
+  fill: #2196f3;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #757575;
 }
 
 /* -------Hero------- */
@@ -235,6 +250,8 @@ border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 0 60px;
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-blue {
@@ -282,6 +299,7 @@ border-radius: 4px;
 .footer-contact-list :first-child {
   margin: 0 0 9px 0;
 }
+
 .footer-contact-list :last-child {
   margin: 0%;
 }
@@ -307,4 +325,70 @@ border-radius: 4px;
   letter-spacing: 0.03em;
 
   color: #ffffff;
+}
+
+.join {
+  margin-left: 70px;
+}
+
+.join-title {
+  margin: 0px 0px 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-social-link {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-link-list {
+  height: 44px;
+  width: 44px;
+  display: flex;
+
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-link-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.footer-social-link-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  align-items: center;
+}
+
+.footer-social-link-link:hover,
+.footer-social-link-link:focus {
+  background-color: #2196f3;
+}
+
+.footer-social-link-link:hover .footer-social-link-icon,
+.footer-social-link-link:focus .footer-social-link-icon {
+  fill: #ffffff;
+}
+
+.footer-social-link-icon {
+  fill: #ffffff;
 }
